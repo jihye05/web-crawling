@@ -4,9 +4,6 @@ from bs4 import BeautifulSoup
 
 web=urlopen('http://www.swu.ac.kr/www/swuniversity.html')
 soup=BeautifulSoup(web, "html.parser")  # BeautifulSoup이용 파싱하기
-tmp=soup.select('a')
-# links=soup.find_all('a')
-# cell_line=[]
 
 print("*** 서울여자대학교 학과 및 홈페이지 정보 ***")
 print("학과".ljust(20),"홈페이지")
