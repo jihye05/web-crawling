@@ -17,7 +17,7 @@ for link in soup.find_all('a'):
 
     print(link.text.strip().ljust(20),end='')
     try:
-        if Search_data.text == "홈페이지 바로가기":
+        if Search_data.text == "홈페이지 바로가기" or Search_data.text=="홈페이지바로가기":
             print(Search_data.get('href'))
             # if Search_data.text == NoneType:
             #     return
